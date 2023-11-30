@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Historical Monument</title>
+</head>
+<style>
+  .head {
+    border-radius: 5px;
+    border-bottom: 4px solid var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+    font-size: 3.3em;
+  }
+
+  .card {
+    display: block;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="../Assets/logo.png" alt="Historical Monument" width="30" height="24"
+          class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./sevenwonders.html">Seven Wonders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery Section</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu fade-down" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./north.html">North</a></li>
+              <li><a class="dropdown-item" href="./east.html">East</a></li>
+              <li><a class="dropdown-item" href="./south.html">South</a></li>
+              <li><a class="dropdown-item" href="./west.html">West</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/contactus.html">Contact Us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sitemap.html">Site Map</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <h1 class="head">Modern/New Seven Wonders</h1>
+  <div class="cards-sect mb-4">
+  </div>
+  <h1 class="head">Ancient Seven Wonders</h1>
+  <div class="cards-sect1">
+  </div>
+
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+    </div>
+  </div>
+
+  <footer class="text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="shadow-1-strong d-flex justify-content-center mb-4 mx-auto" style="width: 150px; height: 100px;">
+            <img src="/Assets/logo.png" height="115em" alt="" loading="lazy" />
+          </div>
+
+          <p class="text-center">Journey Through Time, Discover The Legacy Of Our Past</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center social-links">
+            <li>
+              <a class="text-white px-2" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Seven Wonders</h5>
+
+          <ul class="list-unstyled seven-links">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>The Great
+                Wall Of China</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Petra</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Christ The
+                Radeemer</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Machu
+                Pichu</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Chichen
+                Itza</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>The
+                Colosseum</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Taj
+                Mahal</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Travel</h5>
+
+          <ul class="list-unstyled travel-links">
+            <li class="mb-2">
+              <a href="https://www.tauck.com/tours/petra-to-pyramids-jordan-egypt-tours?tcd=eps2023&filters=q:pyramid"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Petra-(Jordan)</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Colosseum-(Italy)</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://www.abercrombiekent.com/tours/luxury-small-group-journeys/2023/taj-mahal-agra-mumbai-delhi-india"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To Taj
+                Mahal-(India)</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://www.abercrombiekent.com/tours/luxury-tailor-made-travel/2024/mexico-puebla-oaxaca-vacation"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To Chichen
+                Itza-(Mexico)</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://www.abercrombiekent.com/tours/private-journeys/2024/japan-tokyo-hakone-kyoto-private-luxury-tour"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Kyoto-(Japan)</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Cliffs Of Mother-(Ireland)</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2" style="color: #F8A82D;"></i>Warsaw, 57 Street, Poland</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2" style="color: #F8A82D;"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0" style="color: #F8A82D;"></i>contact@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="./index.html">HistoricalMonument.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="../Styles/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <script src="./Javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+    let new_wonders_data = [
+      {
+        title: "Great Wall Of China",
+        img: "../Assets/wall-china.jpg",
+        short_detail: "China - An iconic series of fortifications built to protect China from invasions.",
+        modal_img: "../Assets/gallery/wall-china-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l525/-tc1/?cmp=ga&cq_src=google_ads&cq_cmp=6656469023&cq_con=75868771341&cq_term=great%20wall%20of%20china%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656469023&adgroup_id=75868771341&target_id=kwd-300486434049&loc_physical_ms=1011081&match_type=e&ad_id=395195090070&keyword=great%20wall%20of%20china%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLCU4aq23IIpHpaieqSybS57FkbRcCc3o9LjmEnGOstivGE7Q-oI6kaAqvAEALw_wcB",
+        long_detail: "Apart from defense, other purposes of the Great Wall have included border controls, allowing the imposition of duties on goods transported along the Silk Road, regulation or encouragement of trade and the control of immigration and emigration. Furthermore, the defensive characteristics of the Great Wall were enhanced by the construction of watchtowers, troop barracks, garrison stations, signaling capabilities through the means of smoke or fire, and the fact that the path of the Great Wall also served as a transportation corridor.",
+      },
+      {
+        title: "The Petra",
+        img: "../Assets/petra.jpg",
+        short_detail: "Jordan - An ancient city carved into rose-red cliffs, known for its rock-cut architecture.",
+        modal_img: "../Assets/gallery/petra-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l1624/?cmp=ga&cq_src=google_ads&cq_cmp=6656014506&cq_con=84673402688&cq_term=petra%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656014506&adgroup_id=84673402688&target_id=kwd-300139949667&loc_physical_ms=1011081&match_type=e&ad_id=395198176215&keyword=petra%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmJGU42ojGMtbNpnbmOd4kxYEUakGYDgN9R5coPwdHOwORPs7Y7GHUMaAs1aEALw_wcB",
+        long_detail: "The area around Petra has been inhabited from as early as 7000 BC, and the Nabataeans might have settled in what would become the capital city of their kingdom as early as the 4th century BC. Archaeological work has only discovered evidence of Nabataean presence dating back to the second century BC, by which time Petra had become their capital. The Nabataeans were nomadic Arabs who invested in Petra's proximity to the incense trade routes by establishing it as a major regional trading hub. Unlike their enemies, the Nabataeans were accustomed to living in the barren deserts and were able to repel attacks by taking advantage of the area's mountainous terrain. They were particularly skillful in harvesting rainwater, agriculture, and stone carving. ",
+        pdf: "../templates/info.docx",
+      },
+      {
+        title: "Christ The Redeemer",
+        img: "../Assets/redeemer.jpg",
+        short_detail: "Brazil - The iconic statue of Jesus Christ overlooking Rio de Janeiro.",
+        modal_img: "../Assets/gallery/redeemer-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l3784/?cmp=ga&cq_src=google_ads&cq_cmp=6656469017&cq_con=82779079647&cq_term=christ%20the%20redeemer%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656469017&adgroup_id=82779079647&target_id=kwd-336314515324&loc_physical_ms=1011081&match_type=e&ad_id=444113806936&keyword=christ%20the%20redeemer%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmJgLHQMg4v3dEFMGfybeNJNrcMI9HXGgv__CXDQef2XWObnYUx5dlYaAiGsEALw_wcB",
+        long_detail: "Christ The Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida sculpted the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) high, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide. It is made of reinforced concrete and soapstone.",
+        pdf: "../templates/info.docx",
+      },
+      {
+        title: "The Chichen Itza",
+        img: "../Assets/chichen-itza.jpg",
+        short_detail: "Mexico - A pre-Columbian archaeological site with a pyramid of the Maya civilization.",
+        modal_img: "../Assets/gallery/chichen-itza-gallery.jpg",
+        travel_link: "https://www.getyourguide.es/-l785/?cmp=ga&cq_src=google_ads&cq_cmp=6755607820&cq_con=83205800041&cq_term=chichen%20itza%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6755607820&adgroup_id=83205800041&target_id=kwd-1002189609&loc_physical_ms=1011081&match_type=e&ad_id=395290956170&keyword=chichen%20itza%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmKbH-oR_AM_48_V7wTKmzGqtC_EOQPiyplW2dQIZuF_R9bBhydyEQYaAqptEALw_wcB",
+        long_detail: "Chichén Itzá was a major focal point in the Northern Maya Lowlands from the Late Classic through the Terminal Classic  and into the early portion of the Postclassic period. The site exhibits a multitude of architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of direct migration or even conquest from central Mexico, but most contemporary interpretations view the presence of these non-Maya styles more as the result of cultural diffusion.",
+        pdf: "../templates/info.docx",
+      },
+      {
+        title: "The Colosseum",
+        img: "../Assets/colosseum.jpg",
+        short_detail: "Italy - A Roman amphitheater known for its grandeur and historical significance.",
+        modal_img: "../Assets/gallery/colosseum-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l2619/?cmp=ga&cq_src=google_ads&cq_cmp=6654625819&cq_con=79337056776&cq_term=colosseum%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6654625819&adgroup_id=79337056776&target_id=kwd-333842209&loc_physical_ms=1011081&match_type=e&ad_id=543245689637&keyword=colosseum%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmI-2gQBfrNrlBJAaE9ICndMeeVE3ymN3HCjUXtLx4W6y9-0XHvioNYaAs90EALw_wcB",
+        long_detail: "The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age. The Colosseum is built of travertine limestone, tuff (volcanic rock), and brick-faced concrete. It could hold an estimated 50,000 to 80,000 spectators at various points in its history, having an average audience of some 65,000; it was used for gladiatorial contests and public spectacles including animal hunts, executions, re-enactments of famous battles.",
+      },
+      {
+        title: "Machu Pichu",
+        img: "../Assets/machu-pichu.jpg",
+        short_detail: 'Peru - An ancient Inca city located in the Andes Mountains, often referred to as the "Lost City of the Incas."',
+        modal_img: "../Assets/gallery/blue-mosque-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l1570/?cmp=ga&cq_src=google_ads&cq_cmp=6754073682&cq_con=82313795231&cq_term=machu+pichu+tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6754073682&adgroup_id=82313795231&target_id=kwd-245893219&loc_physical_ms=1011081&match_type=e&ad_id=395214325354&keyword=machu+pichu+tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmIWYlkVkz-r2L4-PClQgyjX4IkdKAIbl_EGrKJfxFs-Ur3-LKhA8-caAhdTEALw_wcB&visitor-id=U4IEVGNT8B0Z6549EMCM4L4MLKLN86OA&locale_autoredirect_optout=true",
+        long_detail: "Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it is renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery. Machu Picchu was declared a Peruvian Historic Sanctuary in 1982 and a UNESCO World Heritage Site in 1983. In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide internet poll",
+      },
+      {
+        title: "Taj Mahal",
+        img: "../Assets/taj-mahal.jpg",
+        short_detail: "India - A stunning white marble mausoleum in Agra, known for its architectural beauty and symbolism of love.",
+        modal_img: "../Assets/gallery/taj-mahal-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l4856/?cmp=ga&cq_src=google_ads&cq_cmp=6654625408&cq_con=80579130698&cq_term=taj%20mahal%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6654625408&adgroup_id=80579130698&target_id=kwd-315538705&loc_physical_ms=1011081&match_type=e&ad_id=394503859916&keyword=taj%20mahal%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLk560jjbJ6uQEkTL1Tcv9LvoFazrTdn39s1Gb-gCUMFKMvUY0H7EYaAseHEALw_wcB",
+        long_detail: "Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around ₹32 million, which in 2023 would be approximately ₹35 billion. The construction project employed some 20,000 artisans under the guidance of a board of architects led by Ustad Ahmad Lahori, the emperor's court architect.",
+        pdf: "../templates/info.docx",
+      },
+    ];
+
+    let new_wonders = document.querySelector(".cards-sect");
+    let getModal = document.querySelector(".modal-dialog");
+    for (let index = 0; index < new_wonders_data.length; index++) {
+      new_wonders.innerHTML += `
+  <div class="card mb-3" style="width: 450px;" data-aos="fade-up">
+    <div class="row g-0">
+      <div class="col-md-4">
+      <img src="${new_wonders_data[index].img}" class="img-fluid rounded-start card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">${new_wonders_data[index].title}</h5>
+        <p class="card-text">${new_wonders_data[index].short_detail}</p>
+        <a href="./info-pdf.html" download class="btn btn-primary btn-md py-2" id="down-btn" ><i class="fa-solid fa-circle-down pe-2" style="color: black;"></i>Download</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick=openMadalnew(${index})>
+  Read More
+</button>
+        </div>
+        </div>  
+  </div>
+</div>
+  `
+    }
+    function openMadalnew(id) {
+      getModal.innerHTML = `
+<div class="modal-content">
+ <div class="modal-header">
+   <h1 class="modal-title fs-5" id="staticBackdropLabel">${new_wonders_data[id].title}</h1>
+   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+ <img src="${new_wonders_data[id].modal_img}" class="img-fluid rounded-start card-img" alt="error loading image">
+ <p class="card-text">${new_wonders_data[id].long_detail}</p>
+ </div>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+ <button type="button" class="btn btn-primary btn-md"><a href="${new_wonders_data[id].travel_link}" style="text-decoration:none;" target="_blank">Travel<i class="fa-solid fa-plane-departure ps-2"></i><a/></button>
+</div>
+</div>
+  `
+    }
+
+    let ancient_wonders_data = [
+      {
+        title: "The Pyramids Of Giza",
+        img: "../Assets/pyramid.jpg",
+        short_detail: "Egypt - Iconic ancient tombs of Pharoahs and of the Seven Wonder of the Ancient World. ",
+        modal_img: "../Assets/gallery/pyramid-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/-l4184/?cmp=ga&cq_src=google_ads&cq_cmp=6656687733&cq_con=78728256626&cq_term=pyramids%20of%20giza%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656687733&adgroup_id=78728256626&target_id=kwd-4540949487&loc_physical_ms=1011081&match_type=e&ad_id=395289121583&keyword=pyramids%20of%20giza%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmJLcrzEepPaFYaTImAemKpQSKJHwbePKNV3_cmRtiVxS_GyVg01qWwaAuRTEALw_wcB",
+        long_detail: "A pyramid is a structure whose outer surfaces are triangular and converge to a single step at the top, making the shape roughly a pyramid in the geometric sense. The base of a pyramid can be trilateral, quadrilateral, or of any polygon shape. As such, a pyramid has at least three outer triangular surfaces. The Pyramid of Khufu is the largest Egyptian pyramid. Pyramids today stand as a reminder of the ancient Egyptian glorification of life after death, and in fact, the pyramids were built as monuments to house the tombs of the pharaohs. Death was seen as merely the beginning of a journey to the other world.",
+      },
+      {
+        title: "The Hanging Gardens of Babylon",
+        img: "../Assets/hang-garden.jpeg",
+        short_detail: "Iraq - A lush terraced garden, although its existance has been debated by historians. ",
+        modal_img: "../Assets/gallery/hang-garden-gallery.jpg",
+        travel_link: "https://www.palmyratour.cz/en/m-2156-the-hanging-gardens-of-babylon",
+        long_detail: "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic culture. They were described as a remarkable feat of engineering with an ascending series of tiered gardens containing a wide variety of trees, shrubs, and vines, resembling a large green mountain constructed of mud bricks. It was said to have been built in the ancient city of Babylon, near present-day Hillah, Babil province, in Iraq. The Hanging Gardens' name is derived from the Greek word κρεμαστός (kremastós, lit. 'overhanging'), which has a broader meaning than the modern English word 'hanging' and refers to trees being planted on a raised structure such as a terrace.",
+      },
+      {
+        title: "The Statue of Zeus",
+        img: "../Assets/zeus.jpg",
+        short_detail: "Greece -Amonumental statue of the greek god zeus,created by the sclptor phidias. ",
+        modal_img: "../Assets/gallery/statue of zeus-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/temple-of-olympian-zeus-athens-l3772/hop-on-hop-off-tours-tc9/?cq_src=google_ads&cq_cmp=6659554703&cq_con=106336423124&cq_term=&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6659554703&adgroup_id=106336423124&target_id=dsa-929853981097&loc_physical_ms=1011081&match_type=&ad_id=450629142236&keyword=&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLOMbvJyT1D3AMbJOoKsfsh_WofqfeBOxkOiXicqcGzLfybb6GlAGsaAk6dEALw_wcB",
+        long_detail: "The Statue of Zeus at Olympia was a giant seated figure, about 12.4 m (41 ft) tall, made by the Greek sculptor Phidias around 435 BC at the sanctuary of Olympia, Greece, and erected in the Temple of Zeus there. Zeus is the sky and thunder god in ancient Greek religion, who rules as king of the gods of Mount Olympus.The statue was a chryselephantine sculpture of ivory plates and gold panels on a wooden framework. Zeus sat on a painted cedarwood throne ornamented with ebony, ivory, gold, and precious stones. It was one of the Seven Wonders of the Ancient World.The statue was lost and destroyed before the end of the 5th century AD, with conflicting accounts of the date and circumstances.",
+      },
+      {
+        title: "The Temple of Artemis",
+        img: "../Assets/artemis.jpg",
+        short_detail: "Turkey -An impressive greek temple dedicated to the goddess Artemis. ",
+        modal_img: "../Assets/gallery/Artemis-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/temple-of-artemis-l104175/",
+        long_detail: "The Temple of Artemis or Artemision also known as the Temple of Diana, was a Greek temple dedicated to an ancient, local form of the goddess Artemis (identified with Diana, a Roman goddess). It was located in Ephesus (near the modern town of Selçuk in present-day Turkey). By 401 AD it had been ruined or destroyed. Only foundations and fragments of the last temple remain at the site.The earliest version of the temple antedated the Ionic immigration by many years. Callimachus, in his Hymn to Artemis, attributed it to the Amazons. In the 7th century BC, it was destroyed by a flood.Its reconstruction, in more grandiose form, began around 550 BC, under Chersiphron, the Cretan architect, and his son Metagenes.",
+      },
+      {
+        title: "The Colossus of Rhodes",
+        img: "../Assets/colossus.jpg",
+        short_detail: "Greece - An enormous bronze statue of the sun god helios, which once stood at the entrance of the harbor of Rohades. ",
+        modal_img: "../Assets/gallery/rhodes-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/colossus-of-rhodes-l176684/",
+        long_detail: "The Colossus of Rhodes was a statue of the Greek Titan god of the sun Helios, erected in the city of Rhodes, on the Greek island of the same name, by Chares of Lindos in 280 BC. One of the Seven Wonders of the Ancient World, it was constructed to celebrate the successful defence of Rhodes city against an attack by Demetrius I of Macedon, who had besieged it for a year with a large army and navy.According to most contemporary descriptions, the Colossus stood approximately 70 cubits, or 33 metres (108 feet) high approximately the height of the modern Statue of Liberty from feet to crown making it the tallest statue in the ancient world",
+      },
+      {
+        title: "The Mausoleum at Halicarnassus",
+        img: "../Assets/mausoleum.jpg",
+        short_detail: "Turkey -A grand tomb built for Mauslus, a satrap in the persian Empire. ",
+        modal_img: "../Assets/gallery/Artemis-gallery.jpg",
+        travel_link: "https://www.getyourguide.com/halicarnassus-mausoleum-l168014/",
+        long_detail: "The Mausoleum at Halicarnassus or Tomb of Mausolus (Ancient Greek: Μαυσωλεῖον τῆς Ἁλικαρνασσοῦ; Turkish: Halikarnas Mozolesi) was a tomb built between 353 and 350 BC in Halicarnassus (present Bodrum, Turkey) for Mausolus, an Anatolian from Caria and a satrap in the Achaemenid Empire, and his sister-wife Artemisia II of Caria. The structure was designed by the Greek architects Satyros and Pythius of Priene. Its elevated tomb structure is derived from the tombs of neighbouring Lycia, a territory Mausolus had invaded and annexed c. 360 BC, such as the Nereid Monument."
+      },
+      {
+        title: "The Lighthouse of Alexandria",
+        img: "../Assets/lighthouse.jpg",
+        short_detail: "Egypt -A tall lighthouse that guided sailor to the port city of Alexandria. ",
+        modal_img: "",
+        travel_link: "https://www.trip.com/travel-guide/attraction/alexandria/lighthouse-of-alexandria-23033383/",
+        long_detail: "Pharos was a small island located on the western edge of the Nile Delta. In 332 BC Alexander the Great founded the city of Alexandria on an isthmus opposite Pharos. Alexandria and Pharos were later connected by a mole spanning more than 1,200 metres (0.75 miles), which was called the Heptastadion ('seven stadia'—a stadion was a Greek unit of length measuring approximately 180 m). The etymology of 'Pharos' is uncertain. The word became generalized in modern Greek (φάρος 'fáros'), and was borrowed by Italian and Spanish ('faro') and French ('phare'). The east side of the mole became the Great Harbour, now an open bay; on the west side lay the port of Eunostos, with its inner basin Kibotos now vastly enlarged to form the modern harbour.",
+      },
+    ];
+
+    let ancient_wonders = document.querySelector(".cards-sect1");
+    for (let index = 0; index < ancient_wonders_data.length; index++) {
+      ancient_wonders.innerHTML += `
+      <div class="card mb-3" style="width: 450px;" data-aos="fade-up">
+    <div class="row g-0">
+      <div class="col-md-4">
+      <img src="${ancient_wonders_data[index].img}" class="img-fluid rounded-start card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">${ancient_wonders_data[index].title}</h5>
+        <p class="card-text">${ancient_wonders_data[index].short_detail}</p>
+        <a href="./info-pdf.html" download class="btn btn-primary btn-md py-2" id="down-btn" ><i class="fa-solid fa-circle-down pe-2" style="color: black;"></i>Download</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick=openMadalold(${index})>
+  Read More
+</button>
+        </div>
+        </div>
+  </div>
+</div>
+  `}
+
+    function openMadalold(id) {
+      getModal.innerHTML = `
+<div class="modal-content">
+ <div class="modal-header">
+   <h1 class="modal-title fs-5" id="staticBackdropLabel">${ancient_wonders_data[id].title}</h1>
+   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+ <img src="${ancient_wonders_data[id].modal_img}" class="img-fluid rounded-start card-img" alt="error loading image">
+ <p class="card-text">${ancient_wonders_data[id].long_detail}</p>
+ </div>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+ <button type="button" class="btn btn-primary btn-md"><a href="${ancient_wonders_data[id].travel_link}" style="text-decoration:none;" target="_blank">Travel<i class="fa-solid fa-plane-departure ps-2"></i><a/></button>
+</div>
+</div>
+  `
+    }
+
+  </script>
+</body>
+
+</html>

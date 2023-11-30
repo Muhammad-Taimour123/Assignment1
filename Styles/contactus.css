@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #F8A82D;
+}
+
+.navbar {
+    margin-bottom: 5em;
+}
+
+.box {
+    margin: auto;
+    margin-bottom: 3em;
+    position: relative;
+    width: 90%;
+    height: 33em;
+    overflow: hidden;
+   }
+
+.box form {
+    position: absolute;
+    inset: 4px;
+    padding: 3% 10%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--primary-color);
+    z-index: 100;
+    background: rgba(56, 56, 55, 0.075);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(248, 168, 45, 0.62);
+
+}
+
+
+
+.box form h2 {
+    margin-top: 1em;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.1en;
+}
+
+.box form .input {
+    position: relative;
+    width: 90%;
+    margin-top: 2em;
+}
+
+.box form .input input {
+    position: relative;
+    width: 100%;
+    padding: 30px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1en;
+    letter-spacing: 0.05en;
+    transition: 0.5s;
+    z-index: 8;
+}
+
+.box form .input span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: white;
+    font-size: 1en;
+    letter-spacing: 0.05en;
+    transition: 0.5s;
+}
+
+.box form .input input:valid~span,
+.box form .input input:focus~span {
+    color: var(--primary-color);
+    font-size: 0.75en;
+    transform: translateY(-34px);
+}
+
+.box form .input i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.box form .input input:valid~i,
+.box form .input input:focus~i {
+    height: 44px;
+}
+
+.box form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: .2em;
+    background: var(--primary-color);
+    cursor: pointer;
+    font-size: 0.9en;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 3em;
+    transition: all 0.4s ease;
+}
+
+.box form input[type="submit"]:active {
+    opacity: 0.8;
+}
+
+.box form input[type="submit"]:hover {
+    background-color: #6C757D;
+}
+
+.circles {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}

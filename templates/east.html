@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+    <title>Historical Monument</title>
+</head>
+<style>
+    @media screen and (max-width:992px) {
+        .circles {
+            display: none;
+        }
+
+        .head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .head {
+        border-radius: 5px;
+        border-bottom: 4px solid var(--primary-color);
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1em;
+        font-size: 3.3em;
+    }
+
+    .cards-sect {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .cards-sect1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../Assets/logo.png" alt="Historical Monument" width="30" height="24"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sevenwonders.html">Seven Wonders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">Gallery Section</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu fade-down" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./north.html">North</a></li>
+                            <li><a class="dropdown-item" href="./east.html">East</a></li>
+                            <li><a class="dropdown-item" href="./south.html">South</a></li>
+                            <li><a class="dropdown-item" href="./west.html">West</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sitemap.html">Site Map</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <h1 class="head">Monuments In The East</h1>
+    <div class="cards-sect">
+        <!-- <div class="card mb-3 " style="width: 540px;" data-aos="fade-up">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../Assets/pyramid.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iste exercitationem error sed porro fuga ullam voluptas reprehenderit hic quod.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    </div>
+    <!-- modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable">
+
+  </div>
+</div>
+
+
+    <footer class="text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                    <div class="shadow-1-strong d-flex justify-content-center mb-4 mx-auto"
+                        style="width: 150px; height: 100px;">
+                        <img src="/Assets/logo.png" height="115em" alt="" loading="lazy" />
+                    </div>
+
+                    <p class="text-center">Journey Through Time, Discover The Legacy Of Our Past</p>
+
+                    <ul class="list-unstyled d-flex flex-row justify-content-center social-links">
+                        <li>
+                            <a class="text-white px-2" href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white px-2" href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white ps-2" href="https://www.youtube.com/" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Seven Wonders</h5>
+
+                    <ul class="list-unstyled seven-links">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>The Great
+                                Wall Of China</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>Petra</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>Christ The
+                                Radeemer</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>Machu
+                                Pichu</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>Chichen
+                                Itza</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>The
+                                Colosseum</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3"
+                                    style="color: #F8A82D;"></i>Taj
+                                Mahal</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Travel</h5>
+
+                    <ul class="list-unstyled travel-links">
+                        <li class="mb-2">
+                            <a href="https://www.tauck.com/tours/petra-to-pyramids-jordan-egypt-tours?tcd=eps2023&filters=q:pyramid"
+                                class="text-white"><i class="fa-solid fa-plane-departure pe-3"
+                                    style="color: #F8A82D;"></i>To
+                                Petra-(Jordan)</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-plane-departure pe-3"
+                                    style="color: #F8A82D;"></i>To
+                                Colosseum-(Italy)</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://www.abercrombiekent.com/tours/luxury-small-group-journeys/2023/taj-mahal-agra-mumbai-delhi-india"
+                                class="text-white"><i class="fa-solid fa-plane-departure pe-3"
+                                    style="color: #F8A82D;"></i>To Taj
+                                Mahal-(India)</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://www.abercrombiekent.com/tours/luxury-tailor-made-travel/2024/mexico-puebla-oaxaca-vacation"
+                                class="text-white"><i class="fa-solid fa-plane-departure pe-3"
+                                    style="color: #F8A82D;"></i>To Chichen
+                                Itza-(Mexico)</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://www.abercrombiekent.com/tours/private-journeys/2024/japan-tokyo-hakone-kyoto-private-luxury-tour"
+                                class="text-white"><i class="fa-solid fa-plane-departure pe-3"
+                                    style="color: #F8A82D;"></i>To
+                                Kyoto-(Japan)</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa-solid fa-plane-departure pe-3"
+                                    style="color: #F8A82D;"></i>To
+                                Cliffs Of Mother-(Ireland)</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contact</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><i class="fas fa-map-marker-alt pe-2" style="color: #F8A82D;"></i>Warsaw, 57 Street,
+                                Poland</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-phone pe-2" style="color: #F8A82D;"></i>+ 01 234 567 89</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope pe-2 mb-0" style="color: #F8A82D;"></i>contact@example.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="./index.html">HistoricalMonument.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <script src="../Styles/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="./Javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+
+        let east_data = [
+            {
+                title: "The Hanging Gardens of Babylon",
+                img: "../Assets/hang-garden.jpeg",
+                short_detail: "Iraq - A lush terraced garden, although its existance has been debated by historians. ",
+                modal_img: "../Assets/gallery/hang-garden-gallery.jpg",
+                travel_link: "https://www.palmyratour.cz/en/m-2156-the-hanging-gardens-of-babylon",
+                long_detail: "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic culture. They were described as a remarkable feat of engineering with an ascending series of tiered gardens containing a wide variety of trees, shrubs, and vines, resembling a large green mountain constructed of mud bricks. It was said to have been built in the ancient city of Babylon, near present-day Hillah, Babil province, in Iraq.",
+            },
+            {
+                title: "The Statue of Zeus",
+                img: "../Assets/zeus.jpg",
+                short_detail: "Greece -Amonumental statue of the greek god zeus,created by the sclptor phidias. ",
+                modal_img: "../Assets/zeus.jpg",
+                travel_link: "https://www.getyourguide.com/temple-of-olympian-zeus-athens-l3772/hop-on-hop-off-tours-tc9/?cq_src=google_ads&cq_cmp=6659554703&cq_con=106336423124&cq_term=&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6659554703&adgroup_id=106336423124&target_id=dsa-929853981097&loc_physical_ms=1011081&match_type=&ad_id=450629142236&keyword=&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLOMbvJyT1D3AMbJOoKsfsh_WofqfeBOxkOiXicqcGzLfybb6GlAGsaAk6dEALw_wcB",
+                long_detail: "The Statue of Zeus at Olympia was a giant seated figure, about 12.4 m (41 ft) tall, made by the Greek sculptor Phidias around 435 BC at the sanctuary of Olympia, Greece, and erected in the Temple of Zeus there. Zeus is the sky and thunder god in ancient Greek religion, who rules as king of the gods of Mount Olympus.The statue was a chryselephantine sculpture of ivory plates and gold panels on a wooden framework. Zeus sat on a painted cedarwood throne ornamented with ebony, ivory, gold, and precious stones.",
+            },
+            {
+                title: "The Temple of Artemis",
+                img: "../Assets/artemis.jpg",
+                short_detail: "Turkey -An impressive greek temple dedicated to the goddess Artemis. ",
+                modal_img: "../Assets/artemis.jpg",
+                travel_link: "https://www.getyourguide.com/temple-of-artemis-l104175/",
+                long_detail: "The Temple of Artemis or Artemision (Greek: Ἀρτεμίσιον; Turkish: Artemis Tapınağı), also known as the Temple of Diana, was a Greek temple dedicated to an ancient, local form of the goddess Artemis (identified with Diana, a Roman goddess). It was located in Ephesus (near the modern town of Selçuk in present-day Turkey). By 401 AD it had been ruined or destroyed. Only foundations and fragments of the last temple remain at the site.The earliest version of the temple (a Bronze Age temenos) antedated the Ionic immigration by many years. Callimachus, in his Hymn to Artemis, attributed it to the Amazons.",
+            },
+            {
+                title: "The Kremlin",
+                img: "../Assets/kremlin.jpg",
+                short_detail: "Russia - A historic fortress complex in Moscow that includes cathedrals, palaces, and govermnent buildings.",
+                modal_img: "../Assets/gallery/kremlin-gallery.jpg",
+                travel_link: "https://bridgetomoscow.com/the-tour-of-moscow-kremlin",
+                long_detail: "The Moscow Kremlin (Russian: Московский Кремль, romanized: Moskovskiy Kreml', IPA: [mɐˈskofskʲɪj ˈkrʲemlʲ]), also simply known as the Kremlin, is a fortified complex in the center of Moscow.[1] It is the best known of the kremlins (Russian citadels), and includes five palaces, four cathedrals, and the enclosing Kremlin Wall with Kremlin towers. In addition, within the complex is the Grand Kremlin Palace that was formerly the residence of the Russian emperor in Moscow. The complex now serves as the official residence of the Russian president and as a museum with almost three million visitors in 2017.",
+                pdf: "../templates/info.docx",
+            },
+            {
+                title: "The Lighthouse of Alexandria",
+                img: "../Assets/lighthouse.jpg",
+                short_detail: "Egypt -A tall lighthouse that guided sailor to the port city of Alexandria. ",
+                modal_img: "../Assets/lighthouse.jpg",
+                travel_link: "https://www.trip.com/travel-guide/attraction/alexandria/lighthouse-of-alexandria-23033383/",
+                long_detail: "Pharos was a small island located on the western edge of the Nile Delta. In 332 BC Alexander the Great founded the city of Alexandria on an isthmus opposite Pharos. Alexandria and Pharos were later connected by a mole spanning more than 1,200 metres (0.75 miles), which was called the Heptastadion ('seven stadia'—a stadion was a Greek unit of length measuring approximately 180 m). The etymology of 'Pharos' is uncertain. The word became generalized in modern Greek (φάρος 'fáros'), and was borrowed by Italian and Spanish ('faro') and French ('phare'). ",
+            },
+            {
+                title: "The Leaning Tower Of Pisa",
+                img: "../Assets/pisa.jpg",
+                short_detail: "Italy - A famous freestanding bell tower known for tilt.",
+                modal_img: "../Assets/gallery/pisa-gallery.jpg",
+                travel_link: "https://www.getyourguide.com/-l157/?cmp=ga&cq_src=google_ads&cq_cmp=20682170600&cq_con=150049372690&cq_term=pisa&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=20682170600&adgroup_id=150049372690&target_id=kwd-11018601&loc_physical_ms=1011081&match_type=b&ad_id=677811426636&keyword=pisa&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLIIrKPm6QFAC4Pq4cv9Op8DwFLm08GGpqnlw4dw8Kqr2shniGt9p4aAoJ8EALw_wcB",
+                long_detail: "The Leaning Tower of Pisa, or simply, the Tower of Pisa, is the campanile, or freestanding bell tower, of Pisa Cathedral. It is known for its nearly four-degree lean, the result of an unstable foundation. The Leaning Tower of Pisa (Italian: torre pendente di Pisa), or simply    or freestanding bell tower, of Pisa Cathedral. It is known for its nearly four-degree lean, the result of an unstable foundation. The tower is one of three structures in the Pisa's Cathedral Square (Piazza del Duomo), which includes the cathedral and Pisa Baptistry.The height of the tower is 55.86 metres (183 feet 3 inches) from the ground on the low side and 56.67 m (185 ft 11 in) on the high side.",
+                pdf: "../templates/info.docx",
+            },
+            {
+                title: "Blue Mosque",
+                img: "../Assets/blue-mosque.jpg",
+                short_detail: "Turkey - An elegant mosque in Istanbul, known for its blue tiles and unique architecture.",
+                modal_img: "../Assets/gallery/blue-mosque-gallery.jpg",
+                travel_link: "https://www.getyourguide.com/-l3533/?cmp=ga&cq_src=google_ads&cq_cmp=6656030148&cq_con=82743301081&cq_term=blue%20mosque%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656030148&adgroup_id=82743301081&target_id=kwd-58048707691&loc_physical_ms=1011081&match_type=e&ad_id=394416924232&keyword=blue%20mosque%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmKTWkzZwbR93KIoLVv1MQRpT4F5DdVqfiO3r7Fd88cKaRkJWUec89kaAjHoEALw_wcB",
+                long_detail: "The Blue Mosque in Istanbul, also known by its official name, the Sultan Ahmed Mosque, is an Ottoman-era historical imperial mosque located in Istanbul, Turkey. It was constructed between 1609 and 1617 during the rule of Ahmed I and remains a functioning mosque today. The Blue Mosque in Istanbul, also known by its official name, the Sultan Ahmed Mosque (Turkish: Sultan Ahmet Camii), is an Ottoman-era historical imperial mosque located in Istanbul, Turkey. It was constructed between 1609 and 1617 during the rule of Ahmed I and remains a functioning mosque today. It also attracts a large number of tourists and is one of the most iconic and popular monuments of Ottoman architecture.The mosque has a classical Ottoman layout with a central dome surrounded by four semi-domes over the prayer hall.",
+                pdf: "../templates/info.docx",
+            },
+        ]
+
+        let east_section = document.querySelector(".cards-sect");
+        let getModal = document.querySelector(".modal-dialog");
+        let down_btn = document.querySelector("#down-btn")
+        for (let index = 0; index < east_data.length; index++) {
+            east_section.innerHTML += `
+  <div class="card hide-card mb-3" style="width: 415px;" data-aos="fade-up">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="${east_data[index].img}" class="img-fluid rounded-start card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">${east_data[index].title}</h5>
+        <p class="card-text">${east_data[index].short_detail}</p>
+        <a href="${east_data[index].pdf}" download class="btn btn-primary btn-md py-2" id="down-btn" ><i class="fa-solid fa-circle-down pe-2" style="color: black;"></i>Download</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="openMadal(${index})">
+        Read More
+</button>
+      </div>
+    </div>
+  </div>
+</div>
+`
+        }
+        function openMadal(id) {
+            getModal.innerHTML = `
+ <div class="modal-content">
+ <div class="modal-header">
+   <h1 class="modal-title fs-5" id="staticBackdropLabel">${east_data[id].title}</h1>
+   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+ <img src="${east_data[id].modal_img}" class="img-fluid rounded-start card-img" alt="error loading image">
+ <p class="card-text">${east_data[id].long_detail}</p>
+ </div>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+ <button type="button" class="btn btn-primary btn-md"><a href="${east_data[id].travel_link}" style="text-decoration:none;" target="_blank">Travel<i class="fa-solid fa-plane-departure ps-2"></i><a/></button>
+</div>
+</div>
+ `
+        }
+    </script>
+</body>
+
+</html>

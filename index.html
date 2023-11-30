@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Styles/style.css">
+  <link rel="stylesheet" href="./Styles/About.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+  <title>Historical Monument</title>
+</head>
+<style>
+
+</style>
+
+<body>
+  <div class="loader-wrapper">
+    <div class="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="../Assets/logo.png" alt="Historical Monument" width="30" height="24"
+          class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/sevenwonders.html">Seven Wonders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/gallery.html">Gallery Section</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu fade-down" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./templates/north.html">North</a></li>
+              <li><a class="dropdown-item" href="./templates/east.html">East</a></li>
+              <li><a class="dropdown-item" href="./templates/south.html">South</a></li>
+              <li><a class="dropdown-item" href="./templates/west.html">West</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/contactus.html">Contact Us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/sitemap.html">Site Map</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="home-container" data-aos="fade-up">
+    <div class="home-slide">
+      <div class="item" style="background-image: url(./Assets/slide2.jpg);">
+        <div class="item-content">
+          <div class="name"><span style="color: #F8A82D;">A</span>ffiliate <span style="color: #F8A82D;">L</span>inks
+          </div>
+          <div class="des">Explore our affiliate links to find convenient resources for planning your trips to these
+            monuments. We connect you with trusted partners who can help you make the most of your historical adventure.
+          </div>
+          <button type="button" class="btn btn-primary btn-lg px-3 py- me-md-2"
+            onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./Assets/slide4.jpg);">
+        <div class="item-content">
+          <div class="name"><span style="color: #F8A82D;">D</span>iscover <span style="color: #F8A82D;">T</span>he <span
+              style="color: #F8A82D;">L</span>egacy <span style="color: #F8A82D;">O</span>f <span
+              style="color: #F8A82D;">O</span>ur <span style="color: #F8A82D;">P</span>ast</div>
+          <div class="des">Explore the architectural marvels and cultural treasures that have shaped our past, and let
+            history come alive in your journey with us.</div>
+          <button type="button"  class="btn_slider btn btn-primary btn-lg  me-md-2"
+            onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./Assets/slide3.jpg);">
+        <div class="item-content">
+          <div class="name"><span style="color: #F8A82D;">M</span>onumental <span
+              style="color: #F8A82D;">I</span>nsights</div>
+          <div class="des">Delve into our meticulously curated articles and explore the rich history, architectural
+            wonders, and cultural significance of renowned monuments from around the world.</div>
+          <button type="button" class="btn_slider btn btn-primary btn-lg  me-md-2"
+            onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./Assets/slide1.jpg);">
+        <div class="item-content">
+          <div class="name"><span style="color: #F8A82D;">C</span>ommunity <span style="color: #F8A82D;">A</span>nd
+            <span style="color: #F8A82D;">E</span>ngagement
+          </div>
+          <div class="des">Join our passionate community of monument enthusiasts. Share your thoughts, experiences, and
+            connect with others who share your fascination for history.</div>
+          <button type="button" class="btn_slider btn btn-primary btn-lg  me-md-2"
+            onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./Assets/slide5.jpg);">
+        <div class="item-content">
+          <div class="name"><span style="color: #F8A82D;">W</span>ho <span style="color: #F8A82D;">W</span>e <span
+              style="color: #F8A82D;">A</span>re?</div>
+          <div class="des">We are a team of historians, architects, and passionate individuals who have dedicated our
+            lives to uncovering the secrets of these remarkable monuments.</div>
+          <button type="button" class="btn_slider btn btn-primary btn-lg  me-md-2"
+            onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./Assets/slide6.jpg);">
+        <div class="item-content">
+          <div class="name"><span style="color: #F8A82D;">J</span>oin <span style="color: #F8A82D;">U</span>s</div>
+          <div class="des">We invite you to join us on this journey through time. Explore, learn, and be inspired by the
+            wonders of the past that still resonate with us today. </div>
+          <button type="button" class="btn_slider btn btn-primary btn-lg me-md-2"
+            onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="home-button">
+      <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+  </div>
+
+  <div class="gap" data-aos="fade-up">
+    <h3>Journey Through Time</h3>
+    <p>Join us on a captivating voyage through time, where every monument tells a story, connecting us to our rich
+      heritage. Explore the architectural marvels and cultural treasures that have shaped our past, and let history come
+      alive in your journey with us.</p>
+    <div class="d-grid gap-2 d-md-flex justify-content-center">
+      <button type="button" class="gap_btn btn   me-md-2 "
+        onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+      <button type="button" class="contact_btn btn "
+        onclick="document.location='./templates/contactus.html'">Contact Us</button>
+    </div>
+  </div>
+
+  <div class="visit-container" data-aos="fade-up">
+    <h3>Plan Your <span id="visti">Visit!</span> </h3>
+    <div class="bg-circle"></div>
+    <div class="carousel-container">
+      <button class="slider-nav prev" id="prev"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M15 6l-6 6l6 6"></path>
+        </svg></button>
+      <button class="slider-nav next" id="next"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M9 6l6 6l-6 6"></path>
+        </svg></button>
+      <div class="carousel-wrapper">
+        <div class="visit-carousel">
+          <div class="carousel-slide" tabindex="0" data-image-src="https://images.unsplash.com/photo-1591865986097-77712322981b?auto=format&fit=crop&q=80&w=1422&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l3763/?cmp=ga&cq_src=google_ads&cq_cmp=6654623683&cq_con=78721822226&cq_term=acropolis%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6654623683&adgroup_id=78721822226&target_id=kwd-3070904717&loc_physical_ms=1011081&match_type=e&ad_id=628213580532&keyword=acropolis%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmIO1BsK_lW77Jve-NQ3vWDTVX0CODWGto-Z5-jByLuFoyjutH9IKNYaAipoEALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Acropolis</h2></a>
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://plus.unsplash.com/premium_photo-1661961684509-e7a64267efcd?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l157/?cmp=ga&cq_src=google_ads&cq_cmp=20682170600&cq_con=150049372690&cq_term=pisa&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=20682170600&adgroup_id=150049372690&target_id=kwd-11018601&loc_physical_ms=1011081&match_type=b&ad_id=677811426636&keyword=pisa&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLIIrKPm6QFAC4Pq4cv9Op8DwFLm08GGpqnlw4dw8Kqr2shniGt9p4aAoJ8EALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Pisa Tower</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1597151386439-e7e134dca0e1?auto=format&fit=crop&q=80&w=1372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.es/-l2772/?cmp=ga&cq_src=google_ads&cq_cmp=6754084929&cq_con=78431629406&cq_term=alhambra%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6754084929&adgroup_id=78431629406&target_id=kwd-5383229791&loc_physical_ms=1011081&match_type=e&ad_id=395213787283&keyword=alhambra%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmJLBeWqUkRupfdWCydc-UL-1qKiQjCD7Q28yo8-pB-7DumeDslj4PoaAkx_EALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Alhambra</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&q=80&w=1396&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l3533/?cmp=ga&cq_src=google_ads&cq_cmp=6656030148&cq_con=82743301081&cq_term=blue%20mosque%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656030148&adgroup_id=82743301081&target_id=kwd-58048707691&loc_physical_ms=1011081&match_type=e&ad_id=394416924232&keyword=blue%20mosque%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmKTWkzZwbR93KIoLVv1MQRpT4F5DdVqfiO3r7Fd88cKaRkJWUec89kaAjHoEALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Blue Mosque</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1692876697264-1f37ce2e81e5?auto=format&fit=crop&q=80&w=1527&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.es/-l785/?cmp=ga&cq_src=google_ads&cq_cmp=6755607820&cq_con=83205800041&cq_term=chichen%20itza%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6755607820&adgroup_id=83205800041&target_id=kwd-1002189609&loc_physical_ms=1011081&match_type=e&ad_id=395290956170&keyword=chichen%20itza%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmKbH-oR_AM_48_V7wTKmzGqtC_EOQPiyplW2dQIZuF_R9bBhydyEQYaAqptEALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Chichen Itza</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1530999811698-221aa9eb1739?auto=format&fit=crop&q=80&w=1528&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l1570/?cmp=ga&cq_src=google_ads&cq_cmp=6754073682&cq_con=82313795231&cq_term=machu+pichu+tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6754073682&adgroup_id=82313795231&target_id=kwd-245893219&loc_physical_ms=1011081&match_type=e&ad_id=395214325354&keyword=machu+pichu+tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmIWYlkVkz-r2L4-PClQgyjX4IkdKAIbl_EGrKJfxFs-Ur3-LKhA8-caAhdTEALw_wcB&visitor-id=U4IEVGNT8B0Z6549EMCM4L4MLKLN86OA&locale_autoredirect_optout=true" target="_blank" style="text-decoration: none; color: white;"><h2>Machu Pichu</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1585506942812-e72b29cef752?auto=format&fit=crop&q=80&w=1456&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l4856/?cmp=ga&cq_src=google_ads&cq_cmp=6654625408&cq_con=80579130698&cq_term=taj%20mahal%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6654625408&adgroup_id=80579130698&target_id=kwd-315538705&loc_physical_ms=1011081&match_type=e&ad_id=394503859916&keyword=taj%20mahal%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmLk560jjbJ6uQEkTL1Tcv9LvoFazrTdn39s1Gb-gCUMFKMvUY0H7EYaAseHEALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Taj Mahal</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1577620059970-4f9af03e5a31?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l4184/?cmp=ga&cq_src=google_ads&cq_cmp=6656687733&cq_con=78728256626&cq_term=pyramids%20of%20giza%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656687733&adgroup_id=78728256626&target_id=kwd-4540949487&loc_physical_ms=1011081&match_type=e&ad_id=395289121583&keyword=pyramids%20of%20giza%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmJLcrzEepPaFYaTImAemKpQSKJHwbePKNV3_cmRtiVxS_GyVg01qWwaAuRTEALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Pyramid</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1634196243663-71cc3a1c639a?auto=format&fit=crop&q=80&w=1527&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content">
+              <a href="https://www.getyourguide.com/-l2619/?cmp=ga&cq_src=google_ads&cq_cmp=6654625819&cq_con=79337056776&cq_term=colosseum%20tour&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6654625819&adgroup_id=79337056776&target_id=kwd-333842209&loc_physical_ms=1011081&match_type=e&ad_id=543245689637&keyword=colosseum%20tour&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAuqKqBhDxARIsAFZELmI-2gQBfrNrlBJAaE9ICndMeeVE3ymN3HCjUXtLx4W6y9-0XHvioNYaAs90EALw_wcB" target="_blank" style="text-decoration: none; color: white;"><h2>Colosseum</h2></a> 
+            </div>
+          </div>
+          <div class="carousel-slide" tabindex="0"
+            data-image-src="https://images.unsplash.com/photo-1595878263670-8db8723ce4fa?auto=format&fit=crop&q=80&w=1372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="carousel-content" style="overflow-x: hidden;">
+              <a href="https://www.english-heritage.org.uk/visit/places/stonehenge/plan-your-visit/" target="_blank" style="text-decoration: none; color: white;"><h2>Stonehenge</h2></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="pre-abt slider mb-5" data-aos="fade-up">
+    <div class="container pre-abt-container col-xxl-8 px-4">
+      <div class="row flex-lg-row align-items-center g-5">
+        <div class="col-lg-6">
+          <h1 class=" display-5 fw-bolder lh-1 mb-3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">Who We Are?</h1>
+          <p>We are a team of historians, architects, and passionate individuals
+            who have dedicated our lives to uncovering the secrets of these remarkable monuments. Our shared love for
+            history and culture has brought us together to create a platform where we can share our knowledge, passion,
+            and experiences with you.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1700">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+              onclick="document.location='./templates/sevenwonders.html'">Read More</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+              onclick="document.location='./templates/contactus.html'">Contact Us</button>
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6 home-img">
+          <img src="./Assets/logo.png" class="d-block mx-lg-auto img" alt="Statue Of Lberty" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </section>
+
+  <section id="testim" class="testim"data-aos="fade-up">
+    <h3>What Our <span id="visti">Visiters</span>  Say!</h3>
+    <!--         <div class="testim-cover"> -->
+                <div class="wrap">
+    
+                    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                    <ul id="testim-dots" class="dots">
+                        <li class="dot active"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li>
+                    </ul>
+                    <div id="testim-content" class="cont">
+                        
+                        <div class="active">
+                            <div class="img"><img src="./Assets/profile-1.jpg" alt=""></div>
+                            <h2>Alfred Douglas</h2>
+                            <p>"Historical Monuments is a historical treasure trove! The articles and affiliate links are pure gold for
+                              travel planning."</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="./Assets/profile-2.jpg"></div>
+                            <h2>Christy Joseph</h2>
+                            <p>"This website is a history lover's dream. Informative content, beautiful guides, and affiliate links for
+                              convenience. Perfect!"</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="./Assets/profile-3.jpg" alt=""></div>
+                            <h2>Lisa Cook</h2>
+                            <p>"Historical Monuments exceeded my expectations. Well-researched info, user-friendly, and the affiliate
+                              links are a game-changer!"</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="./Assets/profile-4.jpg" alt=""></div>
+                            <h2>Monica Potter</h2>
+                            <p>"I'm hooked! Historical Monuments is my go-to for historical travel. The site's educational resources and
+                              affiliate links are top-notch."</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="./Assets/profile-5.jpg" alt=""></div>
+                            <h2>Erik Long</h2>
+                            <p>"Historical Monuments - where history comes alive. It's my favorite resource for travel planning with those
+                              handy affiliate links. Love it!"</p>                    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    <!--         </div> -->
+        </section>
+
+
+  <div class="cards-head" data-aos="fade-up">
+    <h2>Discover History's Treasures</h2>
+  </div>
+  <div class="cards-section">
+  </div>
+  <div class="load-btn mt-5 mb-5" .><button id="load-more" class="btn btn-primary">Load More</button>
+  </div>
+
+
+  <!-- modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-scrollable">
+
+    </div>
+  </div>
+
+  <div class="foot-gal" .><h3>Gallery</h3></div>
+  <div id="scrollbarY" data-aos="fade-up">
+    <ul class="container-scroll">
+      <li class="scroll-elems"> <img src="./Assets/gallery/pisa-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/slide2.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/alhambra-gallery.jpg" alt="" />
+      </li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/hang-garden-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/liberty-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/colosseum-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/stonehenge-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/taj-mahal-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/blue-mosque-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/wall-china-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/zimb-ruins-gallery.webp" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/chichen-itza-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/machu-pichu-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/petra-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/gallery/kremlin-gallery.jpg" alt="" /></li>
+      <li class="scroll-elems"> <img src="./Assets/slide1.jpg" alt="" /></li>
+    </ul>
+  </div>
+
+  <footer class="text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="bg-dark shadow-1-strong d-flex justify-content-center mb-4 mx-auto"
+            style="width: 150px; height: 100px;">
+            <img src="./Assets/logo.png" height="115em" alt="" loading="lazy" />
+          </div>
+
+          <p class="text-center">Journey Through Time, Discover The Legacy Of Our Past</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center social-links">
+            <li>
+              <a class="text-white px-2" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Seven Wonders</h5>
+
+          <ul class="list-unstyled seven-links">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>The Great
+                Wall Of China</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Petra</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Christ The
+                Radeemer</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Machu
+                Pichu</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Chichen
+                Itza</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>The
+                Colosseum</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-house pe-3" style="color: #F8A82D;"></i>Taj
+                Mahal</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Travel</h5>
+
+          <ul class="list-unstyled travel-links">
+            <li class="mb-2">
+              <a href="https://www.tauck.com/tours/petra-to-pyramids-jordan-egypt-tours?tcd=eps2023&filters=q:pyramid"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Petra-(Jordan)</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Colosseum-(Italy)</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://www.abercrombiekent.com/tours/luxury-small-group-journeys/2023/taj-mahal-agra-mumbai-delhi-india"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To Taj
+                Mahal</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://www.abercrombiekent.com/tours/luxury-tailor-made-travel/2024/mexico-puebla-oaxaca-vacation"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To Chichen
+                Itza-(Mexico)</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://www.abercrombiekent.com/tours/private-journeys/2024/japan-tokyo-hakone-kyoto-private-luxury-tour"
+                class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Kyoto-(Japan)</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fa-solid fa-plane-departure pe-3" style="color: #F8A82D;"></i>To
+                Cliffs Of Mother-(Ireland)</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2" style="color: #F8A82D;"></i>Warsaw, 57 Street, Poland</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2" style="color: #F8A82D;"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0" style="color: #F8A82D;"></i>contact@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="./index.html">HistoricalMonument.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="../Styles/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <script src="./Javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+    let loadMoreBtn = document.querySelector("#load-more");
+    let currentItem = 6;
+
+    loadMoreBtn.onclick = () => {
+      let cards = [...document.querySelectorAll(".hide-card")];
+      for (let index = currentItem; index < currentItem + 3; index++) {
+        cards[index].style.display = "block";
+      }
+      currentItem += 1;
+
+      if (currentItem >= cards.length) {
+        loadMoreBtn.style.display = "none";
+      }
+    }
+    const elementsToFadeInUpOnScroll = document.querySelectorAll(".fade-in-up-on-scroll");
+    if (elementsToFadeInUpOnScroll) {
+      window.addEventListener("scroll", function (event) {
+        elementsToFadeInUpOnScroll.forEach(function (element) {
+          if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
+            element.classList.add("fade-in-up");
+          } else {
+            element.classList.remove("fade-in-up");
+          }
+        });
+      });
+    }
+
+  </script>
+</body>
+
+</html>
